@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A29DDB37-9649-E378-63E6-91C2745A7D64" containerWithKeyObject="2B02BDCD-7237-4E52-6344-1174926AC336" localFKIndex="54249A0E-5A8A-CF55-61E4-AF1B12715ED5" name="dcwrkshp_recst_FK2">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-02-27 14:05:55 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<referredTableLongName>dcollectdb.dc_record_status</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0AB3C426-A9CE-E7F9-1B8F-72012DCC0B5F</referredTableID>
+<keyObject>B9BA8565-4668-D58A-5937-612EA4057760</keyObject>
+<referredKeyID>B9BA8565-4668-D58A-5937-612EA4057760</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

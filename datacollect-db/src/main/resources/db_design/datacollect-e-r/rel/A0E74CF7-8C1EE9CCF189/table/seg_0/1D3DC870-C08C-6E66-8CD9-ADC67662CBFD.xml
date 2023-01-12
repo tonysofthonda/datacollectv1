@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1D3DC870-C08C-6E66-8CD9-ADC67662CBFD" schemaObject="96AE8C31-E368-6D30-1112-DDCED5A8A48D" name="dc_facility">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-02-14 16:51:26 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<ordsAlias>table_34</ordsAlias>
+<abbreviation>dc_fac</abbreviation>
+<endOfScript>CREATE OR REPLACE TRIGGER {schema}.{table abbr}_upd_trg&lt;br/&gt;	BEFORE UPDATE ON {schema}.{table}&lt;br/&gt;	FOR EACH ROW&lt;br/&gt;BEGIN&lt;br/&gt;	SELECT SYSDATE INTO :NEW.UPDATE_TIMESTAMP FROM SYS.DUAL;&lt;br/&gt;END;</endOfScript>
+<shouldGeneratescript>true</shouldGeneratescript>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="617F2CB8-78D5-2777-265E-1146D3A338C9">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-02-14 16:51:26 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="concept" id="C8391FEC-9649-CEFB-97D4-FA4B9E449DB8">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-02-14 16:51:26 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="067D5C2B-BEF7-D6FB-B538-E1CE095B5BE8">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-02-14 16:51:26 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dc_record_status_id" id="90CEDE03-86C7-B693-91D6-C68275D05A1E">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-02-14 16:55:36 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9DEE2BE0-1D2B-1E5F-0BD7-6157CEBF7F61" referredColumn="7973213A-3965-A824-F0F1-54F32E8A0B44"/>
+</associations>
+</Column>
+<Column name="create_timestamp" id="8763D21D-A319-9C60-5496-D4DD44E86AEC">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-02-14 16:51:26 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="update_timestamp" id="ADB5D54E-11DC-24E6-99FA-408244202BD4">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-02-14 16:51:26 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DB0A049D-F5A3-B851-F932-69FE19156F6B" name="dc_fac_PK">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-02-14 16:51:26 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="617F2CB8-78D5-2777-265E-1146D3A338C9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="11B1E64A-A7AA-033C-6BC3-61464788276C" name="dc_fac_concept_UN">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-02-14 16:56:50 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C8391FEC-9649-CEFB-97D4-FA4B9E449DB8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C0FB6688-A45B-53C4-856E-AB29607E721B" name="dc_fac_recst_FK">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-02-14 16:59:11 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="90CEDE03-86C7-B693-91D6-C68275D05A1E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

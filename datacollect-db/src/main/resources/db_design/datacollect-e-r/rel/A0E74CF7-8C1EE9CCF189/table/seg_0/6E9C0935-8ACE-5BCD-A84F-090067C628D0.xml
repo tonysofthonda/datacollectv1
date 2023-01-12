@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6E9C0935-8ACE-5BCD-A84F-090067C628D0" schemaObject="96AE8C31-E368-6D30-1112-DDCED5A8A48D" name="dc_facility_x_dealer">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-02-14 19:25:31 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<ordsAlias>table_20</ordsAlias>
+<abbreviation>ctxgrp</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="dc_facility_id" id="E370A1B5-4205-3343-F369-AE8559F8C341">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-02-14 19:25:31 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_facxdel_facility_id</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="71534DA7-2FAB-57CF-E8E7-2BD54DD30A17" referredColumn="617F2CB8-78D5-2777-265E-1146D3A338C9"/>
+</associations>
+</Column>
+<Column name="dc_dealer_id" id="3117622B-6706-1CF1-5370-B842FC75E114">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-02-14 19:25:31 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_facxdel_dealer_id</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="46A56EAE-B125-E9B4-0C6A-DA0066E97FF0" referredColumn="5272D06D-B60D-F063-DCD6-755CE15BD372"/>
+</associations>
+</Column>
+<Column name="quantity" id="6B1F8889-59E7-33E6-6C9A-7169AC511797">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-02-14 19:27:45 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="92C8168F-2A67-07CC-9E27-75387571F848" name="dc_facility_x_dealer_PK">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-02-14 19:25:31 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E370A1B5-4205-3343-F369-AE8559F8C341"/>
+<colUsage columnID="3117622B-6706-1CF1-5370-B842FC75E114"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C9713C2C-8F54-2DE3-74BB-96129CCEB740" name="dc_fac_FK">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-02-14 19:25:31 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E370A1B5-4205-3343-F369-AE8559F8C341"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="08906911-6F18-4C3E-FB58-8E77EDFF1E82" name="dc_deal_FK">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-02-14 19:25:31 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3117622B-6706-1CF1-5370-B842FC75E114"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

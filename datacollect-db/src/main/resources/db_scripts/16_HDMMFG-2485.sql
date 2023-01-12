@@ -1,0 +1,6 @@
+/**
+ * Drop CONSTRAINT for column FIRS_NAME in table DC_CLIENT, allow override
+ * Author:  VJC80496
+ * Created: July 02, 2019
+ */
+ALTER TABLE DCOLLECTDB.DC_CLIENT DROP CONSTRAINT NNC_DCLIEN_FIRST_NAME;

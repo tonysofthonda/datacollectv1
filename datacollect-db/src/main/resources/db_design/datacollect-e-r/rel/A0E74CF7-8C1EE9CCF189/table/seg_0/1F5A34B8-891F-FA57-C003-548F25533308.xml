@@ -1,0 +1,310 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1F5A34B8-891F-FA57-C003-548F25533308" schemaObject="96AE8C31-E368-6D30-1112-DDCED5A8A48D" name="dc_vin_model">
+<createdBy>VJC80377</createdBy>
+<createdTime>2018-11-30 21:04:28 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<ordsAlias>table_34</ordsAlias>
+<abbreviation>dc_vinmdl</abbreviation>
+<endOfScript>CREATE OR REPLACE TRIGGER {schema}.{table abbr}_upd_trg&lt;br/&gt;	BEFORE UPDATE ON {schema}.{table}&lt;br/&gt;	FOR EACH ROW&lt;br/&gt;BEGIN&lt;br/&gt;	SELECT SYSDATE INTO :NEW.UPDATE_TIMESTAMP FROM SYS.DUAL;&lt;br/&gt;END;</endOfScript>
+<shouldGeneratescript>true</shouldGeneratescript>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="13EFD4FD-A2AC-A146-A5C4-B39F3C0B24D0">
+<createdBy>VJC80377</createdBy>
+<createdTime>2018-11-30 21:04:28 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="model_year" id="5CC1B85D-627C-C0C6-E793-EFB8C3D4D7A0">
+<createdBy>VJC80377</createdBy>
+<createdTime>2018-11-30 21:04:28 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="model_id" id="F05FE212-4E4A-1DCE-651F-0BB3C80FAFA2">
+<createdBy>VJC80377</createdBy>
+<createdTime>2018-11-30 21:04:28 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="body_type_code" id="513988CD-9ED4-815B-F6DA-963904EA89E5">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-01-03 19:14:20 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="model_type_code" id="CE84A518-1E8B-9E72-48FE-E541443A5C49">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-01-03 19:14:40 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="model_description" id="80E2D899-3416-055D-EF44-280D327AB50F">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-01-03 19:14:51 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="model_release_date" id="7F553313-B3AA-4641-8ABB-178505D28AE1">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-01-03 19:15:04 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="door_quantity" id="55B2912D-3B5B-FAD7-7DE4-ECC2F3BCC88E">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-01-03 19:15:21 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="adjust_body_type_id" id="FDCA68AF-3561-4FEC-56B6-EE5A22CC7244">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-01-03 19:15:35 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="abr_transmision_type" id="D4844CDD-37F8-CA12-E998-66A00DD0347A">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-01-03 19:15:44 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="years_of_warranty" id="F444BC9C-FEBA-D7F9-3A78-7D30F2DA2BB5">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-01-03 19:16:37 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="km_of_warranty" id="B1B2AC43-7C5E-D45B-3688-622B15AF78BC">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-01-03 19:17:20 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prefix_engine_group" id="39ABE35E-9F20-A2D7-98FC-480F1973C40E">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-01-03 19:18:04 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vin_position_1" id="A1B98442-777A-2D34-1C88-10AF00BE4060">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-01-03 19:18:19 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="initials_distributor" id="6276F8F4-E68C-1D96-A568-24B2E31FFD04">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-01-03 19:18:38 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="distributor_number" id="698BFF7B-6ECF-E280-F7D0-1C651F5100B4">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-01-03 20:43:40 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vin_position_10" id="C97D5844-AEC2-26DD-33F9-A35E1930E584">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-01-03 20:49:50 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vin_position_10_desc" id="9D55E387-5888-415E-7DE3-18C2A2F85810">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-01-03 20:44:18 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vin_pos_3_model_id" id="0230A71F-D8F1-8C86-5C92-32252AE70E8A">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-01-03 20:45:15 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cost_center" id="49727F24-D0AA-E146-7147-8D32093E1761">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-01-03 20:45:26 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="accounting_account" id="BE7DFF31-0C7B-B492-0B22-A19D60864733">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-01-03 20:45:41 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="product" id="6B1D2865-6F3C-EB05-2F14-5B2C6B176C00">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-01-03 20:45:56 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="create_timestamp" id="E73DB997-9164-78EC-00CF-AC57F64249D0">
+<createdBy>VJC80377</createdBy>
+<createdTime>2018-11-30 21:04:28 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="update_timestamp" id="487929FE-6A87-7E21-C95C-45281F6ED7A9">
+<createdBy>VJC80377</createdBy>
+<createdTime>2018-11-30 21:04:28 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="07E6F03D-0D51-3603-6AC3-8D6BCBF3A9A1" name="dc_vin_mdl_PK">
+<createdBy>VJC80377</createdBy>
+<createdTime>2018-11-30 21:04:28 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="13EFD4FD-A2AC-A146-A5C4-B39F3C0B24D0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

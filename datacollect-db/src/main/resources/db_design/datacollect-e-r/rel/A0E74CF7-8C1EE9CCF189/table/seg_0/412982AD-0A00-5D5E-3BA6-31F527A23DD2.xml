@@ -1,0 +1,186 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="412982AD-0A00-5D5E-3BA6-31F527A23DD2" schemaObject="96AE8C31-E368-6D30-1112-DDCED5A8A48D" name="dc_month_fin_info">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-15 14:18:06 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<abbreviation>dmfi</abbreviation>
+<endOfScript>CREATE OR REPLACE TRIGGER {schema}.{table abbr}_upd_trg&lt;br/&gt;	BEFORE UPDATE ON {schema}.{table}&lt;br/&gt;	FOR EACH ROW&lt;br/&gt;BEGIN&lt;br/&gt;	SELECT SYSDATE INTO :NEW.UPDATE_TIMESTAMP FROM SYS.DUAL;&lt;br/&gt;END;</endOfScript>
+<shouldGeneratescript>true</shouldGeneratescript>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="D9DD0D35-5DE3-3657-458D-62176FA160B1">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-15 14:18:06 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_dmfi_id</notNullConstraintName>
+</Column>
+<Column name="month_total_expenses" id="CE2A3D98-2999-EB52-6CAA-25BA7A6F996E">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-15 14:39:19 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>13</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,13,4</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="month_sell_expenses" id="CB25CB5F-3F04-A490-A8FC-5E50C098EA7D">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-15 14:47:16 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>13</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,13,4</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="month_profit" id="3E353A8E-C36E-063D-1C53-0E7E47A21740">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-15 14:49:17 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>13</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,13,4</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="month_labor_sum" id="E23416F7-DB41-F014-22E7-2451812D410A">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-15 15:01:47 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>13</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,13,4</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="month_number" id="1A578695-8D08-3E00-CDA7-C772170BC9AE">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-15 14:18:06 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT042</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="year_number" id="D9D0671E-A996-2702-EBB2-9A2E257B907D">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-15 14:36:33 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dc_dealer_id" id="00D4219E-313D-7303-1502-7390CBEF510A">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-15 15:08:51 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_dmfi_dc_dealer_id</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="1E142959-DDB1-9F1F-79E8-0943737AD6E6" referredColumn="5272D06D-B60D-F063-DCD6-755CE15BD372"/>
+</associations>
+</Column>
+<Column name="dc_record_status_id" id="67A4A37B-0D7F-A8EF-8D27-CE67CF07DA1D">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-15 14:18:06 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_dmfi_dc_record_statu</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="3E900E6E-FF18-037D-1451-1CC7F2876FD6" referredColumn="7973213A-3965-A824-F0F1-54F32E8A0B44"/>
+</associations>
+</Column>
+<Column name="create_timestamp" id="E7886E4B-4D34-7858-06C3-0988E01DBA32">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-15 14:18:06 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<usesDefaultValue>true</usesDefaultValue>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_dmfi_create_timestam</notNullConstraintName>
+</Column>
+<Column name="update_timestamp" id="865E986F-596F-1733-F126-C747C0F340A2">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-15 14:18:06 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="37891292-8B35-594D-9AC2-22F1DF524B5B" name="dc_month_finance_info_PK">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-15 14:18:06 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D9DD0D35-5DE3-3657-458D-62176FA160B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3AF9B449-4A70-F128-65AF-09E5DAE5C124" name="dmfi_recst_FK1">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-15 14:18:06 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="67A4A37B-0D7F-A8EF-8D27-CE67CF07DA1D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DE40A15F-D9D8-AA40-1125-8BC1D7BC641A" name="dmfi_dcdeal_FK2">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-15 15:09:03 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="00D4219E-313D-7303-1502-7390CBEF510A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

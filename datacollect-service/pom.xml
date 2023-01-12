@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>datacollect-service</artifactId>
+
+    <parent>
+        <groupId>com.honda.hdm.datacollect</groupId>
+        <artifactId>datacollect</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <name>${custom.prefix}-service</name>
+    <description>${custom.name} module for Services Layer</description>
+
+    <dependencies>
+        <!--OIF Monitor required modules -->
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>datacollect-domain</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>datacollect-persistence</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <!--/OIF Monitor required modules -->
+
+        <!-- Unitary Tests -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-core</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <!--/Unitary Tests -->
+
+        <dependency>
+            <groupId>org.passay</groupId>
+            <artifactId>passay</artifactId>
+            <version>1.3.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.cryptacular</groupId>
+            <artifactId>cryptacular</artifactId>
+            <version>1.2.1</version>
+        </dependency>
+
+        <!-- Boot lib for consuming REST Web Services using RestTemplate -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-rest</artifactId>
+        </dependency>
+		
+        <!-- Dependency Junit and Mockito frameworks -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.8.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>2.21.0</version>
+            <scope>test</scope>
+        </dependency>
+		
+        <!-- Dependency javafaker use generate data dummy -->
+        <dependency>
+            <groupId>com.github.javafaker</groupId>
+            <artifactId>javafaker</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+				
+    </dependencies>
+</project>

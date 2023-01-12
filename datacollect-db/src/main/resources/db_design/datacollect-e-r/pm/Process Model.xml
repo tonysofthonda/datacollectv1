@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="C3ADDFFC-88E1-8D8D-9103-DC5B55BF81CD">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-08 17:57:08 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

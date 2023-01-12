@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<jboss-deployment-structure xmlns="urn:jboss:deployment-structure:1.2">
+    <!--
+    <sub-deployment name="datacollect-web.war">
+        <exclude-subsystems>
+            <subsystem name="jpa"/>
+        </exclude-subsystems>
+    </sub-deployment>
+    -->
+</jboss-deployment-structure>

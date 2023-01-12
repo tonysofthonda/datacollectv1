@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9C3E7827-0F61-736A-BF0B-F075F8E05324" schemaObject="96AE8C31-E368-6D30-1112-DDCED5A8A48D" name="dc_vaction_x_role">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 16:35:25 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<abbreviation>dcactr</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="dc_role_id" id="81E1E85A-08DD-FBEA-4158-2F3191EE1336">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 16:35:25 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C4C97A26-0553-3703-8851-BCEE829377F5" referredColumn="5CB068F4-612A-BE4C-E97C-ACF7E7488422"/>
+</associations>
+</Column>
+<Column name="dc_view_action_id" id="D87A0B45-6686-C6F3-7A8F-84AC41348493">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 16:35:25 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BC5C03CB-D289-7549-293F-D90581BCE02B" referredColumn="00455847-F6D9-2B3F-81D5-083A657AA0A7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9F9CE319-FC0A-221D-3CB5-6A6ED2C1C243" name="dcactr_PK">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 16:35:25 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D87A0B45-6686-C6F3-7A8F-84AC41348493"/>
+<colUsage columnID="81E1E85A-08DD-FBEA-4158-2F3191EE1336"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FDD1D958-0898-3768-494E-E3D0C57981C2" name="dcactrdcrole_FK">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 16:35:25 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="81E1E85A-08DD-FBEA-4158-2F3191EE1336"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B0EC9329-D221-E578-9148-9F4CC90D360A" name="dcactr_dcvact_FK">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-07-25 16:19:54 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D87A0B45-6686-C6F3-7A8F-84AC41348493"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

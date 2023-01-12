@@ -1,0 +1,285 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="50C0C3FA-D984-6D00-1647-56F800FBC1AF" schemaObject="96AE8C31-E368-6D30-1112-DDCED5A8A48D" name="dc_dealer">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 17:04:56 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<abbreviation>dcdeal</abbreviation>
+<endOfScript>CREATE OR REPLACE TRIGGER {schema}.{table abbr}_upd_trg&lt;br/&gt;	BEFORE UPDATE ON {schema}.{table}&lt;br/&gt;	FOR EACH ROW&lt;br/&gt;BEGIN&lt;br/&gt;	SELECT SYSDATE INTO :NEW.UPDATE_TIMESTAMP FROM SYS.DUAL;&lt;br/&gt;END;</endOfScript>
+<shouldGeneratescript>true</shouldGeneratescript>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="5272D06D-B60D-F063-DCD6-755CE15BD372">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 17:04:56 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_dcdeal_id</notNullConstraintName>
+</Column>
+<Column name="dealer_number" id="CAC55FFC-C528-09E0-BBCC-FE0AC1856287">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 17:07:09 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="4589554F-DE1C-1000-DD51-A46C7825660E">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 17:04:56 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_dcdeal_name</notNullConstraintName>
+</Column>
+<Column name="business_name" id="EC63E32B-876B-34D4-819E-5EB6E7273929">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 17:04:56 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rfc" id="ECE8E549-6FAB-50D9-DD6F-99D9A3F593A3">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 17:09:27 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="addr_street" id="5BC3C9F3-62E0-98B2-5300-D2D5B5E29958">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 17:10:22 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="addr_neighborhood" id="4BD7D740-FD9F-CBE0-36E0-4B9C3117EB14">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 17:10:22 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="addr_postcode" id="94454FB9-CB43-7384-B69B-C4128730EE57">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 17:14:22 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6 CHAR</dataTypeSize>
+<ownDataTypeParameters>6 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dc_city_id" id="413E9BF4-F77E-B7B5-6EC0-B5BBF5E2A610">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 17:15:12 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_dcdeal_dc_city_id</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="C97C52E5-38C8-4D2C-46EE-C127D08D059F" referredColumn="AD044171-52C9-56BC-4558-32310B1BCAC8"/>
+</associations>
+</Column>
+<Column name="dc_dealer_group_id" id="38D414F3-0C85-ECF5-A918-2891E5AE8254">
+<createdBy>VJC80377</createdBy>
+<createdTime>2018-10-10 20:41:04 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="39D5987D-BCF5-D2E7-AF31-B1B5AD9CD9AD" referredColumn="60F0D25C-8B0E-F8E2-50A5-1BE5C30C6536"/>
+</associations>
+</Column>
+<Column name="dc_terchief_id" id="7095A8A0-488D-DB24-1E39-9A0065CD6C1C">
+<createdBy>VJC80377</createdBy>
+<createdTime>2018-10-10 22:40:01 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4078F3CD-D671-50BE-70D2-DDD1CF7D513E" referredColumn="5B1C7A4F-8F5D-349E-DC05-F41A308BEB0B"/>
+</associations>
+</Column>
+<Column name="dc_workshop_id" id="FD040CAE-901B-327B-3640-A51CBE698529">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-02-25 22:06:48 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<defaultValue>1</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="16D4AB48-E1C2-30CE-5CDB-60362632C8FD" referredColumn="AA0C6A3A-2154-50F4-249A-BFEF8A081F6F"/>
+</associations>
+</Column>
+<Column name="dc_record_status_id" id="5A2B848A-097D-1B9C-78A0-9B3ED85E0499">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 17:04:56 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_dcdeal_dc_record_statu</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="68F00C23-CC97-DD95-4564-07DD370B7301" referredColumn="7973213A-3965-A824-F0F1-54F32E8A0B44"/>
+</associations>
+</Column>
+<Column name="create_timestamp" id="5C19D404-C030-74E6-B97C-95B108002B36">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 17:04:56 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<usesDefaultValue>true</usesDefaultValue>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_dcdeal_create_timestam</notNullConstraintName>
+</Column>
+<Column name="update_timestamp" id="433899B5-DF10-668E-FA8C-E4ADD40788DA">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 17:04:56 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A70E0749-CAE6-C251-D94B-424054C2C821" name="dc_dealer_PK">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 17:04:56 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5272D06D-B60D-F063-DCD6-755CE15BD372"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C0F12B7E-7075-DC2C-1C38-0CAD7FA6A70C" name="dcdeal_UN1">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 17:04:56 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4589554F-DE1C-1000-DD51-A46C7825660E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AC2EB18F-A96F-8AA5-406F-859CCF0B2474" name="dcdeal_UN2">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 17:15:56 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CAC55FFC-C528-09E0-BBCC-FE0AC1856287"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D9C82C13-9871-B793-8447-22043FF41F07" name="dcdeal_recst_FK1">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 17:04:56 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5A2B848A-097D-1B9C-78A0-9B3ED85E0499"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6ACE4F22-7B4C-C8C4-16AE-EC55BD106B25" name="dcdeal_dccity_FK2">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 17:15:24 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="413E9BF4-F77E-B7B5-6EC0-B5BBF5E2A610"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CC775E31-FE84-ADA8-34E1-4224934654F9" name="dcdeal_ctcgrp_FK4">
+<createdBy>VJC80377</createdBy>
+<createdTime>2018-10-10 20:43:50 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="38D414F3-0C85-ECF5-A918-2891E5AE8254"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="88A9E015-8C29-FCEB-5B36-987855856DDA" name="dcdeal_dcterc_FK5">
+<createdBy>VJC80377</createdBy>
+<createdTime>2018-10-10 23:05:39 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7095A8A0-488D-DB24-1E39-9A0065CD6C1C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8799B040-AC4D-EF0C-71BF-D33CC75BA9D0" name="dcdeal_dcwrkshp_FK6">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-02-25 22:07:10 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD040CAE-901B-327B-3640-A51CBE698529"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

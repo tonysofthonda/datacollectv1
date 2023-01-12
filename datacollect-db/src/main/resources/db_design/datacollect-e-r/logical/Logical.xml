@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="1F6D71BA-D5B3-9374-4439-79D3ED70A66A" mainViewID="D536428E-0C54-E887-219D-29C6D44730CF">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-08 17:57:08 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

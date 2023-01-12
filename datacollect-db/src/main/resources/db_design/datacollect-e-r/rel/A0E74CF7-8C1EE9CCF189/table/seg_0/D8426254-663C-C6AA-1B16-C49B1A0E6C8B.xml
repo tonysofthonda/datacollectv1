@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D8426254-663C-C6AA-1B16-C49B1A0E6C8B" schemaObject="96AE8C31-E368-6D30-1112-DDCED5A8A48D" name="dc_view_action">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-07-25 15:52:42 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<abbreviation>dcvact</abbreviation>
+<endOfScript>CREATE OR REPLACE TRIGGER {schema}.{table abbr}_upd_trg&lt;br/&gt;	BEFORE UPDATE ON {schema}.{table}&lt;br/&gt;	FOR EACH ROW&lt;br/&gt;BEGIN&lt;br/&gt;	SELECT SYSDATE INTO :NEW.UPDATE_TIMESTAMP FROM SYS.DUAL;&lt;br/&gt;END;</endOfScript>
+<shouldGeneratescript>true</shouldGeneratescript>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="00455847-F6D9-2B3F-81D5-083A657AA0A7">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-07-25 15:52:42 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_dcmenu_id</notNullConstraintName>
+</Column>
+<Column name="short_name" id="0EC5FB80-DC77-86B3-B89B-4F3C1EF4235D">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-07-25 15:52:42 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_dcmenu_name</notNullConstraintName>
+</Column>
+<Column name="long_name" id="4C2641FD-E535-BC58-1AC9-CC900DE31D5B">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-07-25 16:05:59 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_dcmenu_name</notNullConstraintName>
+</Column>
+<Column name="dc_view_id" id="4750B2FC-D05A-BBC1-1498-9B15BB01D32C">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-07-25 16:06:41 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="87F2336E-3DDC-92CC-761D-78FDE1DE4B14" referredColumn="AFFDE2DB-8295-8541-7378-099D53052075"/>
+</associations>
+</Column>
+<Column name="create_timestamp" id="AA055262-D651-0618-D1B1-9EEA6BBA6ECE">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-07-25 15:52:42 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<usesDefaultValue>true</usesDefaultValue>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="update_timestamp" id="E326205F-0FFB-3563-D371-31F9984CF194">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-07-25 15:52:42 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B628C897-DD22-08C9-8F9B-BC01F9F85AA5" name="dcvact_PK">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-07-25 15:52:42 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="00455847-F6D9-2B3F-81D5-083A657AA0A7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5E9F9BE2-EADC-9B2D-CD26-424A894518B6" name="dcmenu_UN">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-07-25 15:52:42 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0EC5FB80-DC77-86B3-B89B-4F3C1EF4235D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EA5C50CB-76FE-7737-7A7B-01F31FA77229" name="dcvact_dcview_FK">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-07-25 16:08:10 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4750B2FC-D05A-BBC1-1498-9B15BB01D32C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

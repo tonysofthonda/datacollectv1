@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2B02BDCD-7237-4E52-6344-1174926AC336" schemaObject="96AE8C31-E368-6D30-1112-DDCED5A8A48D" name="dc_workshop">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-02-25 21:59:39 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<abbreviation>dcwrkshp</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="AA0C6A3A-2154-50F4-249A-BFEF8A081F6F">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-02-25 21:59:39 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="C73131BF-6AA6-52A3-33E0-3EC776215122">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-02-25 21:59:39 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dc_record_status_id" id="8E89BD3E-E5C5-4289-94B9-E343F8400705">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-02-27 14:05:34 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A29DDB37-9649-E378-63E6-91C2745A7D64" referredColumn="7973213A-3965-A824-F0F1-54F32E8A0B44"/>
+</associations>
+</Column>
+<Column name="create_timestamp" id="9C1449AC-7081-4955-DA38-64A19F1413FD">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-02-25 22:04:05 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="update_timestamp" id="AA32751B-AB40-50E7-672A-F83FF0182318">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-02-25 22:04:16 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5F13EDCE-5EFE-92A7-3B6F-338005CED088" name="dc_workshop_PK">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-02-25 21:59:39 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA0C6A3A-2154-50F4-249A-BFEF8A081F6F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FED36260-02AE-27C9-6207-0BC95F086DFA" name="dcwrkshp_UN1">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-02-25 22:03:35 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C73131BF-6AA6-52A3-33E0-3EC776215122"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="54249A0E-5A8A-CF55-61E4-AF1B12715ED5" name="dcwrkshp_recst_FK2">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-02-27 14:05:55 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E89BD3E-E5C5-4289-94B9-E343F8400705"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

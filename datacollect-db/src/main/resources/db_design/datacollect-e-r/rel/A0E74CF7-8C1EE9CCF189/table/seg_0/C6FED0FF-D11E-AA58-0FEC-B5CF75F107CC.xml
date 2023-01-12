@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C6FED0FF-D11E-AA58-0FEC-B5CF75F107CC" schemaObject="96AE8C31-E368-6D30-1112-DDCED5A8A48D" name="dc_invoice_status">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-15 21:28:26 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<abbreviation>dinst</abbreviation>
+<endOfScript>CREATE OR REPLACE TRIGGER {schema}.{table abbr}_upd_trg&lt;br/&gt;	BEFORE UPDATE ON {schema}.{table}&lt;br/&gt;	FOR EACH ROW&lt;br/&gt;BEGIN&lt;br/&gt;	SELECT SYSDATE INTO :NEW.UPDATE_TIMESTAMP FROM SYS.DUAL;&lt;br/&gt;END;</endOfScript>
+<shouldGeneratescript>true</shouldGeneratescript>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="3A4BFA72-0743-909A-8A36-6ADA6DEC6669">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-15 21:28:26 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_dinst_id</notNullConstraintName>
+</Column>
+<Column name="name" id="939F9230-7AA5-9BF4-7DD0-57AAA8F5B44C">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-15 21:28:26 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_dinst_name</notNullConstraintName>
+</Column>
+<Column name="description" id="088EA7F2-495C-2AFD-DE18-DA70B5CB5D99">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-15 21:28:26 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dc_record_status_id" id="739E13E9-7DF3-8E0C-F793-5FB018E3E320">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-15 21:28:26 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_dinst_dc_record_statu</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="C386802B-4135-EB51-991A-430754AF1DBB" referredColumn="7973213A-3965-A824-F0F1-54F32E8A0B44"/>
+</associations>
+</Column>
+<Column name="create_timestamp" id="49CAC8BD-CF47-F1E4-2625-46DA4771D24C">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-15 21:28:26 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<usesDefaultValue>true</usesDefaultValue>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_dinst_create_timestam</notNullConstraintName>
+</Column>
+<Column name="update_timestamp" id="0702BE91-8788-93BB-11A5-BAC2D54EEBDC">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-15 21:28:26 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A5B455B2-0A4A-6C01-BC88-DA44FC508BAA" name="dc_invoice_status_PK">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-15 21:28:26 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3A4BFA72-0743-909A-8A36-6ADA6DEC6669"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3D42C79E-AB26-A99A-8522-DA0B23009FC6" name="dinst_UN1">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-15 21:28:26 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="939F9230-7AA5-9BF4-7DD0-57AAA8F5B44C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B308D459-5B02-95C6-D79A-08B88C4A0860" name="dinst_recst_FK1">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-15 21:28:26 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="739E13E9-7DF3-8E0C-F793-5FB018E3E320"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

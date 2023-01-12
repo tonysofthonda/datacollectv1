@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5E29188A-2A23-689E-F7AB-4B8513F5A937" schemaObject="96AE8C31-E368-6D30-1112-DDCED5A8A48D" name="dc_employee_x_dealer">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 18:52:43 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<abbreviation>dempxd</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="dc_employee_id" id="1F9FA022-6683-C189-6DAC-64A84EA4FE4B">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 18:52:43 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_dempxd_dc_employee_id</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="291E3FD2-8BD5-A63D-801B-9F70ACD85158" referredColumn="5D2B1566-327E-5A4B-C800-DC87FF7DDF84"/>
+</associations>
+</Column>
+<Column name="dc_dealer_id" id="D0DF9E1B-2BE7-93C1-8D94-0E6D8EFD0183">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 18:52:43 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_dempxd_dc_dealer_id</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="2836F163-F9B2-AC0E-62BB-69A8BB48715E" referredColumn="5272D06D-B60D-F063-DCD6-755CE15BD372"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="30D0D235-A723-F39B-145C-89EA3BC88196" name="dc_employee_x_dealer_PK">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 18:52:43 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1F9FA022-6683-C189-6DAC-64A84EA4FE4B"/>
+<colUsage columnID="D0DF9E1B-2BE7-93C1-8D94-0E6D8EFD0183"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9F4A7273-4D06-59BE-C5DC-0A403CDD561F" name="dempxd_dcdeal_FK1">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 18:52:43 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D0DF9E1B-2BE7-93C1-8D94-0E6D8EFD0183"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ABE85E8C-597C-EDB5-6975-996DA76E0D35" name="dempxd_dcempl_FK2">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 18:54:16 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1F9FA022-6683-C189-6DAC-64A84EA4FE4B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

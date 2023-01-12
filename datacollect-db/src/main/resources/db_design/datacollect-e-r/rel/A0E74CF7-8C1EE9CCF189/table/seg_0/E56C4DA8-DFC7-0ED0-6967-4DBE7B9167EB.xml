@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E56C4DA8-DFC7-0ED0-6967-4DBE7B9167EB" schemaObject="96AE8C31-E368-6D30-1112-DDCED5A8A48D" name="dc_menu">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-07-25 15:05:11 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<abbreviation>dcmenu</abbreviation>
+<endOfScript>CREATE OR REPLACE TRIGGER {schema}.{table abbr}_upd_trg&lt;br/&gt;	BEFORE UPDATE ON {schema}.{table}&lt;br/&gt;	FOR EACH ROW&lt;br/&gt;BEGIN&lt;br/&gt;	SELECT SYSDATE INTO :NEW.UPDATE_TIMESTAMP FROM SYS.DUAL;&lt;br/&gt;END;</endOfScript>
+<shouldGeneratescript>true</shouldGeneratescript>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="7044F52F-D626-A51B-50A8-A69637A9C403">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-07-25 15:05:11 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_dcview_id</notNullConstraintName>
+</Column>
+<Column name="name" id="92486625-868B-0630-57CA-749965181BE9">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-07-25 15:05:11 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_dcview_name</notNullConstraintName>
+</Column>
+<Column name="order" id="25B0CA23-8E10-7342-F1FD-24C62684B537">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-07-25 15:05:11 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="create_timestamp" id="03D748EE-67E0-C4FD-89D1-A2045A222542">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-07-25 15:05:11 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<usesDefaultValue>true</usesDefaultValue>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="update_timestamp" id="9E303865-6AB3-CC26-5E3B-3F09A2C16FB7">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-07-25 15:05:11 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5F3B5074-7A08-55CD-BC43-507447649E40" name="dcmenu_PK">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-07-25 15:05:11 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7044F52F-D626-A51B-50A8-A69637A9C403"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="35C71C3C-97F6-430E-F79F-8FA2403C8665" name="dcmenu_order_uk">
+<createdBy>VJC80377</createdBy>
+<createdTime>2019-07-25 15:07:04 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="25B0CA23-8E10-7342-F1FD-24C62684B537"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

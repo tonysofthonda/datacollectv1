@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="93F057C4-2134-A477-9D51-5C642B464775" schemaObject="96AE8C31-E368-6D30-1112-DDCED5A8A48D" name="dc_contact_x_terchief">
+<createdBy>VJC80377</createdBy>
+<createdTime>2018-10-10 20:48:29 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<ordsAlias>table_20</ordsAlias>
+<abbreviation>ctxgrp</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="dc_contact_id" id="4EE9F9D2-A07B-F0C9-3236-B76087687A2D">
+<createdBy>VJC80377</createdBy>
+<createdTime>2018-10-10 20:48:29 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_ctxgrp_dc_contact_id</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="BA74D3D6-41DA-E74C-7E7E-58ACD4ABC6AC" referredColumn="9F8DB791-E2A0-37F4-9259-D1191B9AC85E"/>
+</associations>
+</Column>
+<Column name="dc_terchief_id" id="94907D4F-233D-B603-3825-C871778D875C">
+<createdBy>VJC80377</createdBy>
+<createdTime>2018-10-10 20:48:29 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_ctxgrp_dc_dealer_id</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="BD56062C-6B91-AAF6-6258-EF269224B442" referredColumn="5B1C7A4F-8F5D-349E-DC05-F41A308BEB0B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E1493E58-B2CE-E6A9-2BCF-0D0194072F86" name="dc_contact_x_terchief_PK">
+<createdBy>VJC80377</createdBy>
+<createdTime>2018-10-10 20:48:29 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4EE9F9D2-A07B-F0C9-3236-B76087687A2D"/>
+<colUsage columnID="94907D4F-233D-B603-3825-C871778D875C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9B053649-0EB1-7C3D-06BA-1027A4978A0F" name="ctxgrp_dcctc_FK1">
+<createdBy>VJC80377</createdBy>
+<createdTime>2018-10-10 20:48:29 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4EE9F9D2-A07B-F0C9-3236-B76087687A2D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="039ED40D-854D-F21B-6ABE-3614ACB795AB" name="ctxgrp_dcterc_FK3">
+<createdBy>VJC80377</createdBy>
+<createdTime>2018-10-10 23:00:11 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="94907D4F-233D-B603-3825-C871778D875C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

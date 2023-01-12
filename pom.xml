@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.honda.hdm.datacollect</groupId>
+	<artifactId>datacollect</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<name>datacollect</name>
+	<description>${custom.name} parent project</description>
+	<organization>
+		<name>Honda de Mexico</name>
+		<url>http://hondaweb.com</url>
+	</organization>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+		<custom.prefix>datacollect</custom.prefix>
+		<custom.name>Data Collect</custom.name>
+
+	</properties>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.7.0</version>
+		<relativePath />
+	</parent>
+
+	<modules>
+		<!-- modules (order must be following module dependency chain, jar first, 
+			war at the end) -->
+		<module>datacollect-db</module>
+		<module>datacollect-domain</module>
+		<module>datacollect-persistence</module>
+		<module>datacollect-service</module>
+		<module>datacollect-web</module>
+		<module>datacollect-api</module>
+
+		<!-- EAR descriptor -->
+		<module>datacollect-ear</module>
+	</modules>
+
+
+	<!-- Define shared dependencies among sub-modules and avoid duplicating 
+		in child-module\pom.xml -->
+	<dependencies>
+		<dependency>
+	    <groupId>org.springframework.security</groupId>
+	    <artifactId>spring-security-config</artifactId>
+	</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+			<exclusions>
+				<!-- Dependencies not required since we are using WildFly -->
+				<exclusion>
+					<artifactId>tomcat-juli</artifactId>
+					<groupId>org.apache.tomcat</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>tomcat-jdbc</artifactId>
+					<groupId>org.apache.tomcat</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<!-- JDBC driver marked as scope : provided, since must be installed on 
+				and provided by WildFly Server -->
+			<groupId>com.oracle</groupId>
+			<artifactId>ojdbc7</artifactId>
+			<version>12.1.0.1</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<!-- Logging. Configure a log4g2.xml file on src/main/resources on each 
+				module -->
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-log4j2</artifactId>
+		</dependency>
+
+		<dependency>
+			<!-- Custom configuration files processor -->
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-configuration-processor</artifactId>
+			<optional>true</optional>
+		</dependency>
+
+		<dependency>
+			<!-- Spring Mail -->
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-mail</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.4</version>
+			<type>jar</type>
+		</dependency>
+
+		<!-- not needed here, maybe needed in a sub-module for integration testing 
+			(TO-DO) -->
+		<!-- <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-test</artifactId> 
+			<scope>test</scope> </dependency> -->
+
+		<!-- Apache Camel -->
+		<!-- Apache Camel -->
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-spring-boot-starter</artifactId>
+			<version>2.22.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-beanio-starter</artifactId>
+			<version>2.22.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-quartz2</artifactId>
+			<version>2.22.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-ftp</artifactId>
+			<version>2.22.0</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-webmvc</artifactId>
+		    <version>5.3.24</version>
+		</dependency>     
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-web</artifactId>
+		    <version>5.3.24</version>
+		</dependency>
+		<!--/ Apache Camel -->
+	</dependencies>
+</project>

@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="81EE8DEC-290D-53B8-F51C-3A4FED8442D3" schemaObject="96AE8C31-E368-6D30-1112-DDCED5A8A48D" name="dc_terchief">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 17:23:08 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<abbreviation>dcterc</abbreviation>
+<endOfScript>CREATE OR REPLACE TRIGGER {schema}.{table abbr}_upd_trg&lt;br/&gt;	BEFORE UPDATE ON {schema}.{table}&lt;br/&gt;	FOR EACH ROW&lt;br/&gt;BEGIN&lt;br/&gt;	SELECT SYSDATE INTO :NEW.UPDATE_TIMESTAMP FROM SYS.DUAL;&lt;br/&gt;END;</endOfScript>
+<shouldGeneratescript>true</shouldGeneratescript>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="5B1C7A4F-8F5D-349E-DC05-F41A308BEB0B">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 17:23:08 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_dcterc_id</notNullConstraintName>
+</Column>
+<Column name="first_name" id="3C9E7F99-F980-EA2C-A3BB-53B5582CC224">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 17:23:08 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_dcterc_first_name</notNullConstraintName>
+</Column>
+<Column name="last_name" id="18A03D25-942D-5808-D072-37E230637352">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 17:23:08 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="notes" id="C9D4C5D8-3B19-6CC1-A036-2913C4971BEB">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 17:30:01 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dms_name" id="65996F79-41BE-D2E2-9DB1-3BEA4E32BDF7">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 17:31:12 UTC</createdTime>
+<commentInRDBMS>the DMS System name used by dealers</commentInRDBMS>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 CHAR</dataTypeSize>
+<ownDataTypeParameters>25 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dc_record_status_id" id="5BCF6345-D0A3-A268-A13D-8B1991C4AF85">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 17:23:08 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_dcterc_dc_record_statu</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="4B4586F5-3686-1F06-1305-4BB628057335" referredColumn="7973213A-3965-A824-F0F1-54F32E8A0B44"/>
+</associations>
+</Column>
+<Column name="create_timestamp" id="6A9403C0-58A9-3507-3A7A-A7765D65A6B4">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 17:23:08 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<usesDefaultValue>true</usesDefaultValue>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_dcterc_create_timestam</notNullConstraintName>
+</Column>
+<Column name="update_timestamp" id="097DEA5B-DDEC-2D02-ABD2-F51157F3A119">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 17:23:08 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="82B7F47C-98E7-539C-D987-9FAB81B5BD41" name="dc_terchief_PK">
+<createdBy>VJC80377</createdBy>
+<createdTime>2018-10-10 22:59:54 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5B1C7A4F-8F5D-349E-DC05-F41A308BEB0B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8FB87EAF-3F75-A970-05B1-E9A62DA46FC6" name="dcterc_recst_FK1">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 17:23:08 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5BCF6345-D0A3-A268-A13D-8B1991C4AF85"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="96385C1A-2765-071F-B6DB-93217D258E27" schemaObject="96AE8C31-E368-6D30-1112-DDCED5A8A48D" name="dc_role_x_user">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 16:35:25 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<abbreviation>usrole</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="dc_user_id" id="6C9F022B-D931-4E3F-5D99-64504CFF2F26">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 16:35:25 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_usrole_om_user_id</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="FBB6A765-61B0-A172-D17C-D57C1023F0FB" referredColumn="BE4D2CF3-B7F5-29AC-B70E-3DA4D63D0277"/>
+</associations>
+</Column>
+<Column name="dc_role_id" id="F19A8221-91E5-3C14-19A9-723C6279EE1A">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 16:35:25 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_usrole_om_role_id</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="709E048A-BC9C-B108-2EF8-9D36E5DB3D7F" referredColumn="5CB068F4-612A-BE4C-E97C-ACF7E7488422"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6DC399EE-AE27-3477-1398-B3B00C96A1C9" name="dc_user_x_role_PK">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 16:35:25 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6C9F022B-D931-4E3F-5D99-64504CFF2F26"/>
+<colUsage columnID="F19A8221-91E5-3C14-19A9-723C6279EE1A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="55E03319-0CC3-D1F7-1351-10F0376956F8" name="usrole_dcuser_FK2">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 16:35:25 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6C9F022B-D931-4E3F-5D99-64504CFF2F26"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D8F824E8-4629-B06A-5C08-6FF2E2CDAAFB" name="usrole_dcrole_FK1">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 16:35:25 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F19A8221-91E5-3C14-19A9-723C6279EE1A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

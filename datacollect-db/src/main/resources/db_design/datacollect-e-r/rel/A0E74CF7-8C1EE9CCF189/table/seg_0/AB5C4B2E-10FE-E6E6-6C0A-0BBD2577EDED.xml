@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AB5C4B2E-10FE-E6E6-6C0A-0BBD2577EDED" schemaObject="96AE8C31-E368-6D30-1112-DDCED5A8A48D" name="dc_ldapg_x_role">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 16:35:25 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<abbreviation>ldrole</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="dc_ldap_group_id" id="34E93D95-7BBB-31AC-12AB-C6986AA17E3A">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 16:35:25 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_ldrole_om_ldap_group_i</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="26F82171-505B-541F-6661-FEACA7F28C8F" referredColumn="67A79612-89CF-CB36-0D63-662AD03FEE24"/>
+</associations>
+</Column>
+<Column name="dc_role_id" id="BB6902A5-5570-3B55-5BCF-020AD568FFCD">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 16:35:25 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_ldrole_dc_role_id</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="F2F2768C-9C21-3095-310C-6D2604E46B99" referredColumn="5CB068F4-612A-BE4C-E97C-ACF7E7488422"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C77B91C6-BC65-C5E3-4B43-7E45A30B6F14" name="dc_ldapg_x_role_PK">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 16:35:25 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="34E93D95-7BBB-31AC-12AB-C6986AA17E3A"/>
+<colUsage columnID="BB6902A5-5570-3B55-5BCF-020AD568FFCD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="72ED1514-369F-942A-61AE-58E44821D9F5" name="ldrole_ldgrp_FK2">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 16:35:25 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="34E93D95-7BBB-31AC-12AB-C6986AA17E3A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8977125D-737B-7603-A3CB-0356117EC934" name="ldrole_dcrole_FK1">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-10 16:35:25 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BB6902A5-5570-3B55-5BCF-020AD568FFCD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

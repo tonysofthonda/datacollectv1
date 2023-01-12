@@ -1,0 +1,135 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="187EE495-8159-AE32-6DE6-86DF0F782C0B" schemaObject="96AE8C31-E368-6D30-1112-DDCED5A8A48D" name="dc_income_file">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-15 22:28:27 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<abbreviation>dcif</abbreviation>
+<endOfScript>CREATE OR REPLACE TRIGGER {schema}.{table abbr}_upd_trg&lt;br/&gt;	BEFORE UPDATE ON {schema}.{table}&lt;br/&gt;	FOR EACH ROW&lt;br/&gt;BEGIN&lt;br/&gt;	SELECT SYSDATE INTO :NEW.UPDATE_TIMESTAMP FROM SYS.DUAL;&lt;br/&gt;END;</endOfScript>
+<shouldGeneratescript>true</shouldGeneratescript>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="AC11706C-FE08-5A2A-89BF-9E0148CA0475">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-15 22:28:27 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_dcif_id</notNullConstraintName>
+</Column>
+<Column name="file_name" id="7A72A28D-96A7-9B79-A021-84082BFCF4C3">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-15 22:28:27 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_dcif_file_name</notNullConstraintName>
+</Column>
+<Column name="length" id="F1F20E48-75CD-2321-22FC-3579D3B8BC7E">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-15 22:36:13 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dc_dealer_id" id="A6498C03-CBE5-B06B-6727-03B4B1041938">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-15 22:34:44 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_dcif_dc_dealer_id</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="D9CA76EA-BA51-5735-868B-1C82E4D5A02D" referredColumn="5272D06D-B60D-F063-DCD6-755CE15BD372"/>
+</associations>
+</Column>
+<Column name="dc_record_status_id" id="9CB3AFFD-0B1A-4CDD-237D-70FE30C0E8F7">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-15 22:28:27 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_dcif_dc_record_statu</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="480665F4-5F17-B66F-338F-91EDCECDED7C" referredColumn="7973213A-3965-A824-F0F1-54F32E8A0B44"/>
+</associations>
+</Column>
+<Column name="create_timestamp" id="54B24EFF-7B91-1B38-39E8-E5FCE56EE7C2">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-15 22:28:27 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<usesDefaultValue>true</usesDefaultValue>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_dcif_create_timestam</notNullConstraintName>
+</Column>
+<Column name="update_timestamp" id="EB4B102D-6BEB-2F1A-8D8E-4CD720341D11">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-15 22:28:27 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D33ADA40-522C-4EB3-996E-6167865A15AA" name="dc_income_file_PK">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-15 22:28:27 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC11706C-FE08-5A2A-89BF-9E0148CA0475"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="74F2AC8D-F95A-4EB0-701B-C41F24D4FDA7" name="dcif_recst_FK1">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-15 22:28:27 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9CB3AFFD-0B1A-4CDD-237D-70FE30C0E8F7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="450BB540-D5E7-8A87-650D-5DF4F86EC08B" name="dcif_dcdeal_FK2">
+<createdBy>VJC80346</createdBy>
+<createdTime>2018-08-15 22:34:51 UTC</createdTime>
+<ownerDesignName>datacollect-e-r</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A6498C03-CBE5-B06B-6727-03B4B1041938"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
